@@ -11,6 +11,6 @@ export const processString = (req, res, next) => {
   }
 
   return res.status(200).json({
-    word: convertStringIntoArrayAndSortAscending(inputString, true),
+    word: convertStringIntoArrayAndSortAscending(inputString),
   });
 };
